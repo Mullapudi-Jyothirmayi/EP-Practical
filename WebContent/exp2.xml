@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students_info SYSTEM "task2.dtd">
+<students_info>
+	<student sid="a">
+		<regno>170024</regno>
+		<name>Bhanu</name>
+		<avg>92</avg>
+		<dob>15-08-1999</dob>
+		<time>09:30am</time>
+		<mobileno>9849984900</mobileno>
+		<distinction>YES</distinction>
+	</student>
+
+	<student sid='b'>
+		<regno>170034</regno>
+		<name>chinmayi</name>
+		<avg>91</avg>
+		<dob>23-09-1998</dob>
+		<time>06:00am</time>
+		<mobileno>9849984900</mobileno>
+		<distinction>YES</distinction>
+	</student>
+
+	<student sid='c'>
+		<regno>170333</regno>
+		<name>Devi</name>
+		<avg>94</avg>
+		<dob>12-03-19992</dob>
+		<time>09:54pm</time>
+		<mobileno>9849984900</mobileno>
+		<distinction>YES</distinction>
+	</student>
+
+	<student sid='d'>
+		<regno>170414</regno>
+		<name>Kranthi</name>
+		<avg>90</avg>
+		<dob>01-01-1999</dob>
+		<time>10:45am</time>
+		<mobileno>"9849984900"</mobileno>
+		<distinction>YES</distinction>
+	</student>
+
+	<student sid='e'>
+		<regno>170506</regno>
+		<name>Jahnavi</name>
+		<avg>92</avg>
+		<dob>24-10-1999</dob>
+		<time>12:00am</time>
+		<mobileno>"9849984900"</mobileno>
+		<distinction>YES</distinction>
+	</student>
+</students_info> 
