@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: maroon;
+}
+
+
+table {
+  width: 600px;
+  padding: 40px;  
+  border: 10px double green;
+}
+
+</style>
+<script> 
+function validateform()
+{ 
+     var email = document.form.email.value; 
+     var password = document.form.password.value;
+ 
+     if (email==null || email=="")
+     { 
+     alert("Email cannot be blank"); 
+     return false; 
+     }
+     else if(password==null || password=="")
+     { 
+     alert("Password cannot be blank"); 
+     return false; 
+     } 
+}
+</script> 
+</head>
+<body>
+<h1 align='center'>"LOGIN HERE"</h1>
+<form name="f1" method="post" action="login" onsubmit="return validateform()" > 
+<p class="solid">
+	<table align="center">
+		<tr><td>Email Address</td><td>: <input type="text" name="email"></td></tr>
+		<tr><td>Password</td><td>: <input type="password" name="password"></td></tr>
+	</table>
+	<br>
+	<div style="text-align:center">  
+    <input type="submit" />  
+</div> 
+</form> 
+</body>
+</html>
