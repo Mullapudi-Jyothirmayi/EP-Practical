@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: red;
+}
+
+
+table {
+  width: 600px;
+  padding: 40px;  
+  border: 10px double teal;
+}
+
+</style>
+<script> 
+
+	function validateform()
+	{  
+		var regno=document.f1.regno.value;
+		var name=document.f1.name.value;
+		var dept = document.getElementById("dept");
+		var strUser = dept.options[dept.selectedIndex].value;
+		var email=document.f1.email.value; 
+		var gender=document.f1.gender.value;
+		var password=document.f1.password.value;
+		var at=email.indexOf('@');
+		var dot=email.indexOf('.');
+		 
+		if (regno==null || regno=="")
+		{ 
+		 alert("Registered number can't be blank"); 
+		 return false; 
+		}
+		if (regno<=190030000 || regno >=190032999)
+		{ 
+		 alert("Registered number is incorrect"); 
+		 return false; 
+		}
+		if (name==null || name=="")
+		{ 
+		 alert("Name can't be blank"); 
+		 return false; 
+		}
+		if (gender==null || gender=="")
+		{ 
+		 alert("Gender must be selected"); 
+		 return false; 
+		}
+		if (strUser==0)
+		{ 
+		 alert("Department can't be blank"); 
+		 return false; 
+		}
+		if (email==null || email=="")
+		{ 
+		 alert("Email ID can't be blank"); 
+		 return false; 
+		}
+		if (password==null || password=="")
+		{ 
+			 alert("Password can't be blank"); 
+			 return false; 
+		}
+		if(password.length<8)
+		{ 
+			 alert("Password must be at least 8 characters long."); 
+			 return false; 
+		}
+		if((dot - at)>5 && email[dot+3]!=null)
+		{
+		 alert("Welcome"+" "+name);
+		 action = main.html;
+		 return false; 
+		}
+		else
+		{
+		alert("Invalid email");
+		return false; 
+		}
+	}
+</script>
+</head>
+<body>
+<h1 align='center'>" REGISTRATION FORM "</h1>
+<form name='f1' action="StudentInsert" method="post" onsubmit="return validateform()">
+
+<table align="center">
+		<tr><td><b>Registration number</b></td><td>: <input type="text" name="regno"></td></tr>
+		<tr><td><b>Name</b></td><td>: <input type="text" name="name"></td></tr>
+		<tr><td><b>Gender</b></td><td>: 
+			<input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+    		<input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br><br>
+		<tr><td><b>Department</b></td><td>:  <select id="dept" name="dept">
+			<option value="0">Select--</option>
+			<option value="CSE">CSE</option>
+			<option value="ECE">ECE</option>
+			<option value="EEE">EEE</option>
+			<option value="ME">ME</option>
+			<option value="ECM">ECM</option>
+			<option value="PE">PE</option>
+			<option value="ECSE">ECSE</option>
+			<option value="BT">BT</option>
+			</select><br><br>
+		<tr><td><b>Email Address</b></td><td>: <input type="text" name="email"></td></tr>
+		<tr><td><b>Password</b></td><td>: <input type="password" name="password"></td></tr>
+	</table>
+	<br>
+<div style="text-align:center">  
+    <input type="submit" />  
+</div> 
+</form>
+</body>
+</html>
