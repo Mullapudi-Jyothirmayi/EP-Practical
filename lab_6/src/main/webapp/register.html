@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<style>
+h1 {
+  color: navy;
+}
+h2 {
+  color: green;
+}
+div {
+    border-width:7px;  
+    border-style:groove;
+    border-color:lightblue;
+}
+</style>
+
+<body style="background-color:#FDFD96;">
+</head>
+<body>
+<form name='f1' action="register.jsp" method="post">
+
+<h1 align="center">Register Here</h1>
+<p align="center">Please fill in the details to create an account with us.</p>
+
+<div class="container" align="center">
+<table >
+    <tr>
+        <td style="text-align: left; vertical-align: left;"><label for="firstname"><b>First Name</b></label></td>
+        <td><input type="text" placeholder="First Name" name="firstname" required></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; vertical-align: left;"><label for="lastname"><b>Last Name</b></label></td>
+        <td><input type="text" placeholder="Last Name" name="lastname" required></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; vertical-align: left;"><label for="email"><b>Email Address</b></label></td>
+        <td><input type="text" placeholder="Email Address" name="email" required></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; vertical-align: left;"><label for="password"><b>Password</b></label></td>
+        <td><input type="password" placeholder="Enter Password" name="password" required></td>
+    </tr>
+    
+    
+</table>
+<br>
+<button type="submit" class="registerbtn"><strong>Register</strong></button>
+</div>
+
+<p align="center">Already have an account? <a href="login.html">Login</a>.</p>
+
+</form>
+</body>
+</html>
